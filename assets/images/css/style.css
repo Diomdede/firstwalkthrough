@@ -26,6 +26,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 
@@ -70,6 +71,27 @@ h1, h2 {
     color: #fff;
 }
 
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../hero-image.webp') no-repeat center center;
+
+    /* zoom effect! */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* hero image animation */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 #cover-text {
     font-size: 130%;
     font-family: Oswald, sans-serif;
@@ -90,23 +112,28 @@ h1, h2 {
     position: absolute;
 }
 
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../hero-image.webp') no-repeat center center;
+/* house ethos */
 
-    /* zoom effect! */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+#club-ethos {
+    height: 600px;
 }
 
-/* hero image animation */
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: blue;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: silver;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: green;
 }
